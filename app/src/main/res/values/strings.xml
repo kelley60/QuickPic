@@ -14,4 +14,5 @@
     <string name="password_hint">Password</string>
     <string name="sign_up_button_label">Sign Up</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_edit_friends">EditFriendsActivity</string>
 </resources>

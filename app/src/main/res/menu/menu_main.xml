@@ -4,6 +4,10 @@
       tools:context=".MainActivity">
     <item android:id="@+id/action_logout"
           android:title="Logout"
-          android:orderInCategory="100"
+          android:orderInCategory="1"
+          app:showAsAction="never"/>
+      <item android:id="@+id/action_edit_friends"
+          android:title="Edit Friends"
+          android:orderInCategory="2"
           app:showAsAction="never"/>
 </menu>

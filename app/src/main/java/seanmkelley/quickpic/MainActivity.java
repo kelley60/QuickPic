@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 
 import com.parse.ParseUser;
 
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -93,6 +95,11 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_logout) {
             ParseUser.logOut();
             navigateToLogin();
+        }
+
+        if (id == R.id.action_edit_friends){
+            Intent intent = new Intent(this, EditFriendsActivity.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
